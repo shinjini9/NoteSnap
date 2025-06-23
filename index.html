@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoteSnap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>NoteSnap 📝</h1>
+    <form id="noteForm">
+      <input type="text" id="noteTitle" placeholder="Title" required />
+      <textarea id="noteMessage" placeholder="Your note..." required></textarea>
+      <select id="notePriority">
+        <option value="">Select Priority (optional)</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button type="submit">Add Note</button>
+    </form>
+
+    <div id="notesBoard" class="notes-board"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+textarea, input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notes-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.note-card {
+  background-color: #fff8c6;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 6px solid gray;
+  position: relative;
+}
+
+.note-card.high {
+  border-left-color: #ff4d4d;
+}
+.note-card.medium {
+  border-left-color: #ffa500;
+}
+.note-card.low {
+  border-left-color: #5cb85c;
+}
+
+.note-card h3 {
+  margin-top: 0;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
